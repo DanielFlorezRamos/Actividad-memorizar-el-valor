@@ -1,0 +1,38 @@
+Entradas:
+
+-Número de filas: Ingresado por el usuario
+-Número de columnas: Ingresado por el usuario
+
+Salidas:
+
+Tablero de juego: Una tabla que muestra los valores ocultos y revelados
+Mensaje de resultado: Indica si el usuario encontró el valor oculto correctamente o no
+
+Procesos:
+
+Generar tablero:
+Se crea una matriz vacía grid.
+se asigna un valor aleatorio de la lista values a cada celda.
+Mostrar tablero (memoria):
+Se imprime el tablero con los valores sin ocultar.
+Se utiliza time.sleep para mostrar el tablero durante 5 segundos.
+Se borra la salida anterior.
+Ocultar valor:
+Se selecciona un valor aleatoriode la lista.
+Se recorre la matriz y se reemplaza la primera instancia con un asterisco.
+Mostrar tablero (juego):
+Se le pide al usuario que ingrese su respuesta.
+Revelar valor:
+Se compara la respuesta del usuariocon el valor oculto.
+Si coinciden, se imprime un mensaje de éxito.
+Si no coinciden, se imprime un mensaje de error y se revela el valor oculto.
+Repetir juego:
+Se le pregunta al usuario si desea jugar de nuevo.
+Si la respuesta es afirmativa, se vuelve al paso 1.
+Si la respuesta es negativa, se termina el bucle y el programa finaliza.
+
+Restricciones:
+
+El número de filas y columnas debe ser mayor que 0.
+La lista values debe contener al menos dos elementos únicos.
+La respuesta del usuario debe ser un valor válido de la lista values.
